@@ -3,12 +3,7 @@ import pandas as pd
 import os
 import sys
 sys.path.append(os.path.abspath(".."))
-from etl import ETL_pipeline
-
-
-
-
-
+from etl import ETL_pipelin
 st.title("ETL Pipeline")
 file = st.file_uploader("Upload file", type=['csv', 'parquet', 'json', 'xlsx'])
 
