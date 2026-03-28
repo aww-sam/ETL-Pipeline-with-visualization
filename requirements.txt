@@ -1,6 +1,99 @@
-streamlit
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
+altair @ file:///home/task_176700170983498/croot/altair_1767001772546/work
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1763409923949/work
+attrs @ file:///home/task_176235597971743/conda-bld/attrs_1762356877432/work
+bleach==6.3.0
+blinker @ file:///home/task_176433214716139/conda-bld/blinker_1764332160343/work
+Bottleneck @ file:///home/task_176193795211885/conda-bld/bottleneck_1761937995638/work
+brotlicffi @ file:///home/task_176496124915471/conda-bld/brotlicffi_1764961305283/work
+cachetools @ file:///home/task_176486699796143/conda-bld/cachetools_1764867385279/work
+certifi @ file:///home/rocky/buildout/croot/certifi_1774350041016/work/certifi
+cffi @ file:///home/task_176183212682869/conda-bld/cffi_1761832772612/work
+charset-normalizer @ file:///home/task_176174482277165/conda-bld/charset-normalizer_1761744835261/work
+click @ file:///home/task_176433224276464/conda-bld/click_1764332256518/work
+comm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work
+contourpy @ file:///home/task_176364365480719/conda-bld/contourpy_1763643923715/work
+cycler @ file:///home/task_176606792831380/croot/cycler_1766067950713/work
+debugpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_debugpy_1769744977/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work
+et_xmlfile @ file:///work/buildout/croot/et_xmlfile_1759955279076/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1756729339227/work
+fonttools @ file:///work/buildout/croot/fonttools_1768568519884/work
+gitdb @ file:///work/buildout/croot/gitdb_1759955354371/work
+GitPython @ file:///home/task_176787357553457/croot/gitpython_1767874099266/work
+idna @ file:///work/buildout/croot/idna_1762546508632/work
+ipykernel @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_ipykernel_1770566133/work
+ipython @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_ipython_1770040907/work
+ipython_pygments_lexers @ file:///home/conda/feedstock_root/build_artifacts/ipython_pygments_lexers_1737123620466/work
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work
+Jinja2 @ file:///work/buildout/croot/jinja2_1761937187775/work
+joblib @ file:///home/task_176786728785941/croot/joblib_1767868071713/work
+jsonschema @ file:///home/task_176795530042835/croot/jsonschema_1767955378641/work
+jsonschema-specifications @ file:///home/task_176278841548666/conda-bld/jsonschema-specifications_1762788428605/work
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_client_1767954655/work
+jupyter_core @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_core_1760643864/work
+kaggle==2.0.0
+kagglesdk==0.1.16
+kiwisolver @ file:///home/task_176415927081510/conda-bld/kiwisolver_1764159298585/work
+MarkupSafe @ file:///work/buildout/croot/markupsafe_1759952525347/work
+matplotlib==3.10.8
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1761214490209/work
+mkl-service==2.5.2
+mkl_fft @ file:///home/task_176159258493269/conda-bld/mkl_fft_1761592900924/work
+mkl_random @ file:///home/task_176159293775784/conda-bld/mkl_random_1761592951865/work
+narwhals @ file:///work/buildout/croot/narwhals_1761938319991/work
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work
+numexpr @ file:///home/task_176216555608242/conda-bld/numexpr_1762165566524/work
+numpy @ file:///home/task_177073255161752/croot/numpy_and_numpy_base_1770732579388/work/dist/numpy-2.4.2-cp314-cp314-linux_x86_64.whl#sha256=ff6f3a8b80cd4adfc707dc6fb13ed1423619449c944b0eddc8db6b41119c3905
+openpyxl @ file:///work/buildout/croot/openpyxl_1759957146892/work
+packaging @ file:///home/task_176104874909647/conda-bld/packaging_1761049078203/work
+pandas @ file:///home/task_176233228384347/conda-bld/pandas_1762332324932/work/dist/pandas-2.3.3-cp314-cp314-linux_x86_64.whl#sha256=252fcafdd57061f21e7a27eb50782b65582206280f2f21f28aa73eed2c754583
+pandas-stubs @ file:///home/task_177202239985717/croot/pandas-stubs_1772022425618/work
+parso @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_parso_1770676243/work
+pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1733301927746/work
+pillow @ file:///home/task_176943328635994/croot/pillow_1769433308064/work
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1771119110/work
+plotly @ file:///work/buildout/croot/plotly_1762549680392/work
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1756321756983/work
+protobuf @ file:///home/task_177066052317175/croot/protobuf_1770660581618/work/bazel-bin/python/dist/protobuf-6.33.5-cp314-abi3-linux_x86_64.whl#sha256=74f84ceaa1875f13060ceaf57d3580cf207493cabc6c98b0b4d075c5d22546e1
+psutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_psutil_1769678156/work
+ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1733302279685/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=92c32ff62b5fd8cf325bec5ab90d7be3d2a8ca8c8a3813ff487a8d2002630d1f
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work
+pyarrow @ file:///home/task_177193721373807/croot/pyarrow_1771937356982/work/python
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+pyparsing @ file:///home/task_176397380589210/conda-bld/pyparsing_1763973817532/work
+PyQt6==6.9.1
+PyQt6_sip @ file:///work/buildout/croot/pyqt-split_1759957344790/work/pyqt_sip
+PySocks @ file:///home/task_176175231270627/conda-bld/pysocks_1761753008896/work
+python-dateutil @ file:///work/buildout/croot/python-dateutil_1759952394083/work
+python-slugify==8.0.4
+pytz @ file:///home/task_177369280022920/croot/pytz_1773692839114/work
+PyYAML @ file:///home/task_176346547530614/conda-bld/pyyaml_1763465494776/work
+pyzmq @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyzmq_1757387023/work
+referencing @ file:///home/task_176253672043871/conda-bld/referencing_1762536888260/work
+requests @ file:///home/task_176235918762166/conda-bld/requests_1762359593339/work
+rpds-py @ file:///home/task_176236642999933/conda-bld/rpds-py_1762366481829/work
+scikit-learn @ file:///home/task_176609792973864/croot/scikit-learn_1766097948389/work
+scipy @ file:///home/task_177149173966280/croot/scipy_1771491865071/work/dist/scipy-1.17.0-cp314-cp314-linux_x86_64.whl#sha256=3b648d55d3a5c0e34e67cfec12175779a3b66eaa93cfaa07c216680b9b427fea
+seaborn @ file:///work/buildout/croot/seaborn_1763640441258/work
+setuptools==80.10.2
+sip @ file:///work/buildout/croot/sip_1761939556033/work
+six @ file:///work/buildout/croot/six_1759952127748/work
+smmap @ file:///tmp/build/80754af9/smmap_1611694433573/work
+stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work
+streamlit @ file:///home/task_177273506846892/croot/streamlit-split_1772735116254/work/streamlit
+streamlit-option-menu==0.4.0
+tenacity @ file:///home/task_176718479474256/croot/tenacity_1767184813376/work
+text-unidecode==1.3
+threadpoolctl @ file:///home/task_176436168239220/conda-bld/threadpoolctl_1764361726371/work
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+tornado @ file:///work/buildout/croot/tornado_1768563905938/work
+tqdm==4.67.3
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
+tzdata @ file:///home/task_176829656558347/croot/python-tzdata_1768296637279/work
+urllib3 @ file:///home/task_176781021564054/croot/urllib3_1767810264481/work
+watchdog @ file:///work/buildout/croot/watchdog_1759958301042/work
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1770634525285/work
+webencodings==0.5.1
+wheel==0.46.3
