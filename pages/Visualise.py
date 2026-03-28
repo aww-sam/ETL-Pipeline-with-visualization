@@ -6,24 +6,24 @@ import matplotlib.pyplot as plt
 
 st.title("Visualise your data")
 file = st.file_uploader("Upload file", type=['csv', 'parquet', 'json', 'xlsx'])
-st.markdown("""
-<style>
-    /* Main background */
-    .stApp { background-color: #0f1117; color: #e0e0e0; }
+# st.markdown("""
+# <style>
+#     /* Main background */
+#     .stApp { background-color: #0f1117; color: #e0e0e0; }
 
-    /* Cards */
-    .metric-card {
-        background: #1e2130;
-        border-radius: 12px;
-        padding: 1.2rem;
-        border: 1px solid #2d3250;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
+#     /* Cards */
+#     .metric-card {
+#         background: #1e2130;
+#         border-radius: 12px;
+#         padding: 1.2rem;
+#         border: 1px solid #2d3250;
+#         box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+#     }
 
-    /* Hide Streamlit branding */
-    #MainMenu, footer, header { visibility: hidden; }
-</style>
-""", unsafe_allow_html=True)
+#     /* Hide Streamlit branding */
+#     #MainMenu, footer, header { visibility: hidden; }
+# </style>
+# """, unsafe_allow_html=True)
 
 if file:
     file_extension = file.name.split('.')[-1]
