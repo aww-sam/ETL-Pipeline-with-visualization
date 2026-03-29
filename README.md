@@ -5,19 +5,28 @@ A **Streamlit** web app for tabular data: upload CSV, Parquet, JSON, or Excel fi
 ## Features
 
 - **ETL Pipeline** (`ETLPipeline.py`): Upload data, tune imputation (numeric/categorical), null-column dropping, duplicate removal, outlier handling (remove or clip via IQR / sigma / percentiles), scaling (Standard or MinMax), encoding (label or one-hot), skew correction, and optional column exclusions. Download the processed table as CSV, Parquet, or JSON.
-- **Visualization** (`pages/Visualise.py`): Build histograms, KDE, box/violin plots, scatter/line/regression plots, bar/count plots, heatmaps, pair plots, and facet grids from uploaded files.
+- **Scheduler** (`ETLPipeline.py`): Automatically re-run the pipeline on a configurable interval (minutes / hours / days) using APScheduler.
+- **Visualization** (`pages/Visualise.py`): Build histograms, KDE, box/violin plots, scatter/line/regression plots, bar/count plots, heatmaps, pair plots, and facet grids from uploaded files. Export any chart as a multi-page PDF report.
 - **Notebook** (`etl.ipynb`): Jupyter workflow around the same ETL logic in `etl.py`.
 
 ## Requirements
 
 - Python 3.10+ recommended  
-- Core libraries: `streamlit`, `pandas`, `numpy`, `scikit-learn`, `openpyxl` (for `.xlsx`), `matplotlib`, `seaborn`
+- Core libraries: `streamlit`, `pandas`, `numpy`, `scikit-learn`, `openpyxl` (for `.xlsx`), `matplotlib`, `seaborn`, `apscheduler`, `pyarrow`
 
-The bundled `requirements.txt` is a full environment export (conda-style paths). For a fresh virtual environment you can install the essentials with:
+Install all dependencies at once:
 
 ```bash
-pip install streamlit pandas numpy scikit-learn openpyxl matplotlib seaborn pyarrow
+pip install -r requirements.txt
 ```
+
+Or manually install the essentials:
+
+```bash
+pip install streamlit pandas numpy scikit-learn openpyxl matplotlib seaborn pyarrow apscheduler
+```
+
+> **Note:** `apscheduler` is required for the scheduler feature. If it is missing, the scheduler section will show a warning and be disabled — the rest of the pipeline will still work.
 
 Add `jupyter` / `ipykernel` if you use `etl.ipynb`.
 
@@ -32,7 +41,11 @@ Add `jupyter` / `ipykernel` if you use `etl.ipynb`.
    .venv\Scripts\activate
    ```
 
-3. Install dependencies (see above).
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Run the app
 
@@ -44,16 +57,35 @@ streamlit run ETLPipeline.py
 
 The browser opens the **ETL Pipeline** home page. Use the sidebar to open **Visualise** (Streamlit multipage: `pages/Visualise.py`).
 
-Running the pipeline writes `etl.csv` in the working directory when the default load format is CSV (see `etl.py`).
+Running the pipeline writes `etl.csv` (or `etl.parquet` / `etl.json` depending on the load format) and `pipeline.db` (SQLite) in the working directory.
+
+## Transform step order
+
+Inside `etl.py` the transform stage runs in this order:
+
+1. Drop high-null columns
+2. Fill numeric missing values
+3. Fill categorical missing values
+4. Remove duplicates
+5. Remove or clip outliers
+6. Fix skew (`log1p` on positively skewed numeric columns)
+7. Scale features (Standard or MinMax)
+8. Encode categorical columns
+9. Extract datetime features
+
+Skew correction runs **before** scaling so that the scaler operates on already-normalised distributions.
 
 ## Project layout
 
 | Path | Role |
 |------|------|
-| `ETLPipeline.py` | Main Streamlit app — upload, ETL controls, download |
+| `ETLPipeline.py` | Main Streamlit app — upload, ETL controls, scheduler, download |
 | `etl.py` | `ETL_pipeline` class — extract, transform, load |
-| `pages/Visualise.py` | Visualization page |
+| `pages/Visualise.py` | Visualization page (must live in `pages/` for Streamlit multipage routing) |
 | `etl.ipynb` | Notebook exploration |
+| `requirements.txt` | Python dependencies |
+| `pipeline.log` | Auto-generated log file (created on first pipeline run) |
+| `pipeline.db` | Auto-generated SQLite database (created on first pipeline run) |
 
 ## License
 
