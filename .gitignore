@@ -8,6 +8,6 @@ Educational_Infrastructure.csv
 nepal-education-and-socio-economic-trends-20202026.zip
 Student_Performance.csv
 project.tree
-etl.csv
+*.csv
 pipeline.log
 pipeline.db
