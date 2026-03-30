@@ -11,3 +11,6 @@ project.tree
 *.csv
 pipeline.log
 pipeline.db
+*.log
+*.db
+*.tree
